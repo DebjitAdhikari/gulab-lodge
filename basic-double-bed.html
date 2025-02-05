@@ -33,68 +33,47 @@
 </head>
 
 <body>
-    <!-- Spinner Start -->
+    <!-- Loader -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+        <div class="spinner-border" style="width: 3rem; height: 3rem; color: var(--primary);" role="status">
             <span class="sr-only">Loading...</span>
         </div>
     </div>
-    <!-- Spinner End -->
 
 
-    <!-- Topbar Start -->
+    <!-- Topbar -->
     <div class="container-fluid bg-dark px-5 d-none d-lg-block">
         <div class="row gx-0">
             <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>123 Street, New York, USA</small>
-                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</small>
-                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@example.com</small>
-                </div>
-            </div>
-            <div class="col-lg-4 text-center text-lg-end">
-                <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Fulbari, Siliguri, India</small>
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+91 3536630039</small>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>gulablodge1@gmail.com</small>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Topbar End -->
 
 
-    <!-- Navbar & Hero Start -->
+    <!-- Navbar / Hero -->
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
             <a href="" class="navbar-brand p-0">
-                <!-- <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i>Tourist</h1> -->
                 <img class="logo" src="img/gulablogo.png" alt="Logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="false">
                 <span class="fa fa-bars"></span>
+                <span class="fa fa-times d-none"></span>
             </button>
+            
+            
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
-                    <!-- <a href="service.html" class="nav-item nav-link">Services</a> -->
                     <a href="rooms.html" class="nav-item nav-link">Rooms</a>
-                    <!-- <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="destination.html" class="dropdown-item">Destination</a>
-                            <a href="booking.html" class="dropdown-item">Booking</a>
-                            <a href="team.html" class="dropdown-item">Travel Guides</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="404.html" class="dropdown-item">404 Page</a>
-                        </div>
-                    </div> -->
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <!-- <a href="" class="btn btn-primary rounded-pill py-2 px-4">Register</a> -->
             </div>
         </nav>
 
@@ -103,22 +82,15 @@
                 <div class="row justify-content-center py-5">
                     <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
                         <h1 class="display-3 text-white animated slideInDown">Room Details</h1>
-                        <!-- <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb justify-content-center">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                                <li class="breadcrumb-item text-white active" aria-current="page">Destination</li>
-                            </ol>
-                        </nav> -->
+                       
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Navbar & Hero End -->
 
 
-    <!-- Room details Start -->
+    <!-- Room details  -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5 align-items-center">
@@ -166,8 +138,6 @@
                         <h2 class="mb-3 room-heading ">Basic Double Bed Room (Non AC)</h2>
                         <div class="d-flex align-items-center mb-4">
                             <h3 class=" me-3">₹1497</h3>
-                            <!-- <div class="text-muted"><i class="fa fa-taxi me-1"></i>Free cancellation</div> -->
-                            <!-- <div class="text-muted">37% discount</div> -->
                         </div>
     
                         <p class="mb-4">Experience comfort in our modern AC double bed room featuring contemporary design, premium amenities, and stunning city views. Perfect for couples or business travelers.</p>
@@ -210,16 +180,16 @@
                             </div>
                         </div>
     
-                        <button class="btn btn-primary w-100 py-3">Book Now</button>
+                        <a href="rooms.html#bookingForm" class="btn btn-primary w-100 py-3">
+                            Book Now
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Room details End -->
-        
 
-    <!-- Footer Start -->
+    <!-- Footer -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
@@ -289,7 +259,6 @@
             </div>
         </div>
     </div>
-    <!-- Footer End -->
 
 
     <!-- Back to Top -->
@@ -309,6 +278,8 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/toogleMenu.js"></script>
+
     <script src="js/slider.js"></script>
 </body>
 

@@ -136,37 +136,84 @@
         /* background: #FFFFFF; */
         /* background-color: blue; */
     }
-    .navbar-light{
+
+    .navbar-light {
         background-color: black;
         position: fixed;
         width: 100%;
         height: 120px;
+        z-index: 1050;
     }
-    
+
     .navbar-light .navbar-collapse {
         margin-top: 15px;
         border-top: 1px solid #DDDDDD;
     }
-    .navbar-collapse{
-        background-color:white;
-        padding-left: 20px;
+
+    .navbar-collapse {
         position: fixed;
         top: 105px;
-        left: 0px;
+        left: 0;
         width: 100vw;
+        height: 100vh;
+        background-color: white; /* Ensures visibility */
+        padding: 20px;
+        z-index: 1050;
     }
-    
-    
+    .hero-header {
+        padding-top: 120px; /* Adjust based on navbar height */
+    }
+
     .navbar-light .navbar-nav .nav-link,
     .sticky-top.navbar-light .navbar-nav .nav-link {
         /* padding: 10px 0; */
         margin-left: 0;
         color: var(--dark) !important;
     }
-    .navbar-toggler{
-        color: white;
-        background-color: #fff;
+    .nav-link {
+        position: relative;
+        padding: 10px 15px;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: var(--primary);
+        transition: color 0.3s ease-in-out;
     }
+    
+    .nav-link::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 0;
+        height: 3px;
+        background-color: var(--primary);
+        transition: all 0.3s ease-in-out;
+        transform: translateX(-50%);
+    }
+    
+    .nav-link:hover {
+        color: var(--secondary); /* Change color on hover */
+    }
+    
+    .nav-link:hover::after {
+        width: 50%; /* Expand the underline on hover */
+    }
+    
+    .navbar-toggler {
+        background-color: black; /* Set background to black */
+        border: none; /* Remove default border */
+    }
+    
+    .navbar-toggler .fa-bars {
+        color: white; /* Set the bars icon color to white */
+    }
+    
+    .navbar-toggler .fa-times {
+        color: white; /* Set the close (cancel) icon color to white */
+    }
+     
+
     .logo {
         /* max-height: 45px; */
         width: 100%;
@@ -174,12 +221,16 @@
         height: 80px;
     }
 
-    .booking-section{
+    .booking-section {
         padding: 0px;
-        margin:0px;
+        margin: 0px;
     }
-    
+    .navbar-nav {
+        width: 100%;
+        text-align: center; /* Center align the links */
+    }
 }
+
 
 .nav-link{
     color: white;
@@ -470,6 +521,13 @@
 .testimonial-carousel .owl-dot.active {
     background: var(--primary);
     border-color: var(--primary);
+}
+
+.contact-title{
+    color: var(--primary);
+}
+.contact-icon-div{
+    color: var(--primary);
 }
 
 

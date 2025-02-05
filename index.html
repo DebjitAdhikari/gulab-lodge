@@ -34,16 +34,15 @@
 </head>
 
 <body>
-    <!-- Spinner Start -->
+    <!-- Loading  -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+        <div class="spinner-border" style="width: 3rem; height: 3rem; color: var(--primary);" role="status">
             <span class="sr-only">Loading...</span>
         </div>
     </div>
-    <!-- Spinner End -->
 
 
-    <!-- Topbar Start -->
+    <!-- Topbar -->
     <div class="container-fluid bg-dark px-5 d-none d-lg-block">
         <div class="row gx-0">
             <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
@@ -64,19 +63,21 @@
             </div> -->
         </div>
     </div>
-    <!-- Topbar End -->
 
 
-    <!-- Navbar & Hero Start -->
+    <!-- Navbar / Hero-->
     <div class="container-fluid nav-hero position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
             <a href="" class="navbar-brand p-0">
                 <!-- <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i>Tourist</h1> -->
                 <img class="logo" src="img/gulablogo.png" alt="Logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="false">
                 <span class="fa fa-bars"></span>
+                <span class="fa fa-times d-none"></span>
             </button>
+            
+            
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
                     <a href="index.html" class="nav-item nav-link active">Home</a>
@@ -103,22 +104,17 @@
             <div class="container py-5">
                 <div class="row justify-content-center py-5">
                     <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
-                        <h1 class="display-3 text-white mb-3 animated slideInDown">Welcome to Gulab Lodge</h1>
-                        <p class="fs-4 text-white mb-4 animated slideInDown">A Awesome Lodge For You</p>
-                        <!-- search bar -->
-                        <!-- <div class="position-relative w-75 mx-auto animated slideInDown">
-                            <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Eg: Thailand">
-                            <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px;">Search</button>
-                        </div> -->
+                        <h1 class="display-3 text-white mb-3 hero-title animated slideInDown">Welcome to Gulab Lodge</h1>
+                        <p class="fs-4 text-white mb-4 animated slideInDown">Stay in Comfort, Stay in Style.</p>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Navbar & Hero End -->
 
 
-    <!-- About Start -->
+    <!-- About -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
@@ -130,14 +126,16 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <h6 class="section-title bg-white text-start  pe-3">About Us</h6>
                     <h1 class="mb-4">Welcome to <span class="about-title">Gulab Lodge</span></h1>
-                    <p class="mb-4">Gulab Lodge opened its doors to public in 1972 under the proprietorship of US.
-                        At the time, it was a pioneer in hospitality in the Darjeeling region, paving the way for tourism
-                        in North Bengal. The first to open a fine dine restaurant in the city, Hotel Saluja built a loyal
-                        fan base with its delicious food through The Parivar Family restaurant.
+                    <p class="mb-4">Gulab Lodge first opened its doors to the public in 1972 under the leadership of US. 
+                        From the very beginning, 
+                        it set a new standard for hospitality in the Darjeeling region, 
+                        helping to shape the tourism scene in North Bengal. 
                         </p>
-                    <p class="mb-4">From a humble 10 room property, Hotel Saluja eventually grew to over a 100 rooms because
-                        of the love and support of its customers from all over India. We pride ourselves in constantly
-                        upgrading our services while providing budget friendly stays for our guests.</p>
+                    <p class="mb-4">As the first to introduce a fine dining experience in the area, Gulab Lodge quickly became a 
+                        beloved destination, known for its exceptional food and warm hospitality. What began as a modest 10-room property
+                         has now blossomed into a large and vibrant establishment with over 100 rooms, all thanks to the unwavering 
+                         support of our guests from across India. At Gulab Lodge, 
+                        we take pride in continuously enhancing our services while offering affordable stays without compromising on quality.</p>
                     <div class="row gy-2 gx-4 mb-4">
                         <div class="col-sm-6">
                             <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Premium Room</p>
@@ -163,10 +161,9 @@
             </div>
         </div>
     </div>
-    <!-- About End -->
 
 
-    <!-- Service Start -->
+    <!-- Service -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -252,56 +249,9 @@
             </div>
         </div>
     </div>
-    <!-- Service End -->
 
 
-    <!-- Destination Start -->
-    <!-- <div class="container-xxl py-5 destination">
-        <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Destination</h6>
-                <h1 class="mb-5">Popular Destination</h1>
-            </div>
-            <div class="row g-3">
-                <div class="col-lg-7 col-md-6">
-                    <div class="row g-3">
-                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
-                            <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/destination-1.jpg" alt="">
-                                <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">30% OFF</div>
-                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Thailand</div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
-                            <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/destination-2.jpg" alt="">
-                                <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">25% OFF</div>
-                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Malaysia</div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
-                            <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/destination-3.jpg" alt="">
-                                <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">35% OFF</div>
-                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Australia</div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
-                    <a class="position-relative d-block h-100 overflow-hidden" href="">
-                        <img class="img-fluid position-absolute w-100 h-100" src="img/destination-4.jpg" alt="" style="object-fit: cover;">
-                        <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">20% OFF</div>
-                        <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Indonesia</div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Destination Start -->
-
-
-    <!-- Rooms Start -->
+    <!-- Rooms  -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -333,7 +283,7 @@
                             <h4 class="mb-2">₹1249.00</h4>
                             <div class="d-flex justify-content-center mb-2">
                                 <a href="basic-double-bed.html" class=" btn-sm  read-more px-2 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class=" btn-sm  book-now px-2" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                                <a href="#bookingForm" class=" btn-sm  book-now px-2" style="border-radius: 0 30px 30px 0;">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -363,7 +313,7 @@
                             <h4 class="mb-2">₹1549.00</h4>
                             <div class="d-flex justify-content-center mb-2">
                                 <a href="standard-double-bed.html" class=" btn-sm  read-more px-2 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class=" btn-sm  book-now px-2" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                                <a href="#bookingForm" class=" btn-sm  book-now px-2" style="border-radius: 0 30px 30px 0;">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -393,7 +343,7 @@
                             <h4 class="mb-2">₹1249.00</h4>
                             <div class="d-flex justify-content-center mb-2">
                                 <a href="deluxe-double-bed.html" class=" btn-sm  read-more px-2 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class=" btn-sm  book-now px-2" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                                <a href="#bookingForm" class=" btn-sm  book-now px-2" style="border-radius: 0 30px 30px 0;">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -423,7 +373,7 @@
                             <h4 class="mb-2">₹1249.00</h4>
                             <div class="d-flex justify-content-center mb-2">
                                 <a href="deluxe-triple-bed.html" class=" btn-sm  read-more px-2 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class=" btn-sm  book-now px-2" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                                <a href="#bookingForm" class=" btn-sm  book-now px-2" style="border-radius: 0 30px 30px 0;">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -434,10 +384,9 @@
             </div>
         </div>
     </div>
-    <!-- Rooms End -->
 
 
-    <!-- Booking Start -->
+    <!-- Booking  -->
     <div class="container-xxl booking-section py-3 wow fadeInUp" data-wow-delay="0.1s">
         <div class="form-container container">
             <div class="booking p-3">
@@ -509,135 +458,9 @@
         </div>
     </div>
     
-    <!-- Booking Start -->
 
 
-    <!-- Process Start -->
-    <!-- <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Process</h6>
-                <h1 class="mb-5">3 Easy Steps</h1>
-            </div>
-            <div class="row gy-5 gx-4 justify-content-center">
-                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
-                            <i class="fa fa-globe fa-3x text-white"></i>
-                        </div>
-                        <h5 class="mt-4">Choose A Destination</h5>
-                        <hr class="w-25 mx-auto bg-primary mb-1">
-                        <hr class="w-50 mx-auto bg-primary mt-0">
-                        <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet lorem sit</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
-                            <i class="fa fa-dollar-sign fa-3x text-white"></i>
-                        </div>
-                        <h5 class="mt-4">Pay Online</h5>
-                        <hr class="w-25 mx-auto bg-primary mb-1">
-                        <hr class="w-50 mx-auto bg-primary mt-0">
-                        <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet lorem sit</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
-                            <i class="fa fa-plane fa-3x text-white"></i>
-                        </div>
-                        <h5 class="mt-4">Fly Today</h5>
-                        <hr class="w-25 mx-auto bg-primary mb-1">
-                        <hr class="w-50 mx-auto bg-primary mt-0">
-                        <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet lorem sit</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Process Start -->
-
-
-    <!-- Team Start -->
-    <!-- <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Travel Guide</h6>
-                <h1 class="mb-5">Meet Our Guide</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">Full Name</h5>
-                            <small>Designation</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">Full Name</h5>
-                            <small>Designation</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">Full Name</h5>
-                            <small>Designation</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">Full Name</h5>
-                            <small>Designation</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Team End -->
-
-
-    <!-- Testimonial Start -->
+    <!-- Testimonial -->
     <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="text-center">
@@ -646,36 +469,35 @@
             </div>
             <div class="owl-carousel testimonial-carousel position-relative">
                 <div class="testimonial-item bg-white text-center border p-4">
-                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/debjit-img.jpeg" style="width: 80px; height: 80px;">
                     <h5 class="mb-0">Debjit Adhikari</h5>
                     <p>West Bengal, India</p>
-                    <p class="mb-0">The service is great. Rooms are comforable, behaviour are also good.</p>
+                    <p class="mb-0">Perfect stay! Beautiful views, great staff, and clean rooms. Highly recommend!</p>
                 </div>
                 <div class="testimonial-item bg-white text-center border p-4">
-                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">John Doe</h5>
-                    <p>New York, USA</p>
-                    <p class="mt-2 mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/sanjit-img.jpeg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Sanjit Pal</h5>
+                    <p>Darjeeling, India</p>
+                    <p class="mt-2 mb-0">Amazing experience! Cozy atmosphere, excellent food, and great service.</p>
                 </div>
                 <div class="testimonial-item bg-white text-center border p-4">
-                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">John Doe</h5>
-                    <p>New York, USA</p>
-                    <p class="mt-2 mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/manjit-img.jpeg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Manjit Pal</h5>
+                    <p>Kerala, India</p>
+                    <p class="mt-2 mb-0">Wonderful lodge! Friendly staff, beautiful nature, and everything we needed for a great stay.</p>
                 </div>
                 <div class="testimonial-item bg-white text-center border p-4">
-                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">John Doe</h5>
-                    <p>New York, USA</p>
-                    <p class="mt-2 mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/karan-img.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Karan Yadav</h5>
+                    <p>Hyderabad, India</p>
+                    <p class="mt-2 mb-0">A peaceful retreat with excellent service and stunning surroundings. Highly recommend!</p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Testimonial End -->
         
 
-    <!-- Footer Start -->
+    <!-- Footer -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
@@ -745,7 +567,6 @@
             </div>
         </div>
     </div>
-    <!-- Footer End -->
 
 
     <!-- Back to Top -->
@@ -768,6 +589,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/toogleMenu.js"></script>
     <script src="js/formSubmit.js"></script>
 
 </body>
