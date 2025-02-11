@@ -16,7 +16,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     );
 
     // WhatsApp link (replace with your phone number)
-    var whatsappLink = "https://wa.me/+918392056130?text=" + whatsappMessage;
+    var whatsappLink = "https://wa.me/+917001369763?text=" + whatsappMessage;
 
     // Open WhatsApp with pre-filled message
     window.open(whatsappLink, "_blank");

@@ -20,7 +20,7 @@ document.getElementById("bookingForm").addEventListener("submit", function(event
     );
 
     // WhatsApp link (replace with your number)
-    var whatsappLink = "https://wa.me/+918392056130?text=" + message;
+    var whatsappLink = "https://wa.me/+917001369763?text=" + message;
 
     // Open WhatsApp with pre-filled message
     window.open(whatsappLink, "_blank");
